@@ -83,6 +83,6 @@ In order to feed the data into the machine learning model, the alphanumeric ISBN
 The application was built using streamlit. Then the app was deployed on heroku.
 The user will select or enter a name of the book, once he clicks on recommend, similar 10 books will be recommended to the user.
 
-Deployed application : [App](https://git.heroku.com/book-recommender-srp.git)
+Deployed application : [App]([https://git.heroku.com/book-recommender-srp.git](https://book-recommender-srp.herokuapp.com))
 
 ![App](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/app.png "App")
