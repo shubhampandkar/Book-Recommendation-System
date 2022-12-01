@@ -5,9 +5,9 @@
 The goal of this project is to develop a recommendation system that provides a list of 10 books that are similar to a book that a customer has read. This project will implement a collaborative-based filtering method via scikit learn's K-Nearest Neighbours clustering algorithm using the Amazon books dataset. 
 
 ## Dataset
-*The books data contains all the book titles, ISBNs, author, publisher and year of publication. 
-*The user dataset contains the user IDs, location and age. 
-*The ratings dataset contains user ids, ISBNs and book rating scores. 
+* The books data contains all the book titles, ISBNs, author, publisher and year of publication. 
+* The user dataset contains the user IDs, location and age. 
+* The ratings dataset contains user ids, ISBNs and book rating scores. 
 **All datasets are a subset of books available on Amazon.**
 
 Link to dataset : [Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset)
@@ -15,7 +15,7 @@ Link to dataset : [Dataset](https://www.kaggle.com/datasets/arashnic/book-recomm
 ## Colaborative filtering
 
 Recommends items based on similarity measures between users and/or items leveraging the use of a user-item matrix.
-*Core Features:
+* Core Features:
   1. The model's assumption is that people generally tend to like similar things
   2. Predictions are made based on item preferences of similar users
   3. User-Item matrix is used to generate recommendations
@@ -67,11 +67,11 @@ Merging all 3 datasets and exploring the data as we want to be sire of what feat
 
 In order to feed the data into the machine learning model, the alphanumeric ISBN values had to be assigned unique integer IDs. This process was executed in the following steps:
 
-*Use .ravel() method to create array of unique ISBN values and store in book_ids variable.
-*Cast book_ids array to pandas series.
-*Convert book_ids to pandas DataFrame
-*Reset index of book_ids, rename columns to ISBN and Book-ID
-*Merge book_ids DataFrame with larger merged dataset
+* Use .ravel() method to create array of unique ISBN values and store in book_ids variable.
+* Cast book_ids array to pandas series.
+* Convert book_ids to pandas DataFrame
+* Reset index of book_ids, rename columns to ISBN and Book-ID
+* Merge book_ids DataFrame with larger merged dataset
 
 ## Compressed Sparse row matrix
 ![CSR](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/CSR.png "CSR")
