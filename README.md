@@ -46,6 +46,23 @@ Recommends items based on similarity measures between users and/or items leverag
 
 Merging all 3 datasets and exploring the data as we want to be sire of what features should be fed to the model that will provide good results
 
+#### Statistics
+![Statistics](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/statistics.png "Statistics")
+
+#### Top 10 books 
+![Top 10 books](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/top%2010%20books.png "Top 10 books")
+
+#### Top 10 Users
+![Top 10 users](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/top%2010%20user%20rating.png "Top 10 users")
+
+#### Distance plot for Average Rating
+![Average rating](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/average_ratings.png "Average rating")
+**There is extreme peak around 0 and peaks around 4 to 10 shows there are high number of books having count 0**
+
+#### Joint plot
+![Joint plot](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/joint_plot.png "Joint plot")
+**The ratings are mostly given in the range of 6-9**
+
 ## Recommendation system
 
 In order to feed the data into the machine learning model, the alphanumeric ISBN values had to be assigned unique integer IDs. This process was executed in the following steps:
@@ -57,11 +74,15 @@ In order to feed the data into the machine learning model, the alphanumeric ISBN
 *Merge book_ids DataFrame with larger merged dataset
 
 ## Compressed Sparse row matrix
+![CSR](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/CSR.png "CSR")
 
 ## K nearest neighbors
+![KNN](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/KNN.png "KNN")
 
 ## Application
 The application was built using streamlit. Then the app was deployed on heroku.
 The user will select or enter a name of the book, once he clicks on recommend, similar 10 books will be recommended to the user.
 
 Deployed application : [App](https://git.heroku.com/book-recommender-srp.git)
+
+![App](https://github.com/shubhampandkar/Book-Recommendation-System/blob/main/images/app.png "App")
